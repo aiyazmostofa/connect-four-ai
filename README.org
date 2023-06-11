@@ -1,0 +1,45 @@
+* Connect Four AI
+My Connect Four AI that utilizes a Minimax decision tree.
+
+[[https://connect-four-ai.up.railway.app/][Link]]
+
+[[screenshot.png]]
+
+This README is WIP.
+
+** Description
+*** Backstory
+This project originated from my Computer Science 2 class, where we were tasked to make a Connect Four AI.
+I researched about the Minimax decision tree and Alpha-beta pruning.
+I spent hours and hours on this project, fine tuning every little aspect that I could at the time.
+After submitting the work to my teacher, not only did it beat the AI's he gave for student grading, but it also beat his own Minimax AI 10/10 times.
+
+I posted my code onto my old account and just left it there for several months.
+
+Recently, I decided that I wanted to show my AI to the world.
+Since the original code was in Java and there was no "quick and easy" way to run and display the code, I decided to make a website.
+
+This is how the website is managed.
+
+*** The "Website"
+The front end portion of the site consists of an Express.js server that serves HTML, CSS, and JS files.
+These files hold the entire game, including graphics and logic.
+Whenever the game wants the AI to make a move, it calls a POST request to the server with a given String that represents the Game's current position.
+The server will verify that the string is valid, then pass it on to the AI function in the cloud.
+
+The server is hosted on Railway.
+
+*** The AI
+The code was originally written in Java, so I wanted to preserve that.
+Also, since the AI is computationally intensive, I didn't want to put much load on the client-side.
+But renting out multiple servers for this one project seems very wasteful.
+So I decided to use serverless technology, specifically Google Cloud functions.
+
+The function takes in a string, and starts performing computation.
+Then the function sends a response containing the optimal move for that position.
+
+** WIP
+This README is currently in a work in progress.
+
+** License
+[[file:LICENSE][GNU General Public License v3.0]]

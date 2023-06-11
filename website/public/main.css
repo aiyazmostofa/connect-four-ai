@@ -1,0 +1,74 @@
+* {
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+}
+body {
+    text-align: center;
+    background: #000044;
+}
+
+h1 {
+    text-shadow: #FFFFFF 0 0 30px;
+}
+
+#game {
+    box-shadow: #002395 0 0 30px;
+}
+
+.button-panel {
+    padding: 25px 0 25px 0;
+}
+
+button {
+    border-style: none;
+    font-size: 18px;
+    padding: 4px;
+    border-radius: 4px;
+}
+
+.game-button {
+    color: white;
+    background: #002395;
+}
+
+.game-button:hover {
+    background: #002179;
+}
+
+.game-button:active {
+    background: #002065;
+}
+
+.player-button-yellow {
+    color: black;
+    background: #ffd700;
+}
+
+.player-button-yellow:hover {
+    background: #ddb500;
+}
+
+.player-button-yellow:active {
+    background: #bb9300;
+}
+
+.player-button-red {
+    color: white;
+    background: #d70000;
+}
+
+.player-button-disabled {
+    display: none;
+}
+
+.player-button-red:hover {
+    background: #b50000;
+}
+
+.player-button-red:active {
+    background: #930000;
+}
+
+#output {
+    font-size: 18px;
+}
